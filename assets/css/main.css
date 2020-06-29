@@ -4108,6 +4108,18 @@ input, select, textarea {
 					color: inherit;
 				}
 
+				.about-me-content{
+					width: 70% !important;
+				}
+		
+				.about-me-picture{
+					width: 30% !important;
+				}
+
+				.round-image{
+					border-radius: 50%;
+				}
+
 	@media screen and (max-width: 1280px) {
 
 		#footer {
