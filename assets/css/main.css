@@ -3485,6 +3485,15 @@ input, select, textarea {
 			margin: 0;
 		}
 
+		.project-actions{
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.padding-top-1{
+			padding-top: 1rem;
+		}
+
 		@media screen and (max-width: 1280px) {
 
 			#banner {
