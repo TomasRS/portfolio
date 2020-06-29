@@ -10,6 +10,7 @@
 		$body = $('body'),
 		$header = $('#header'),
 		$banner = $('#banner');
+		$bannerIcons = $('#banner-icons');
 
 	// Breakpoints.
 		breakpoints({
