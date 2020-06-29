@@ -3490,7 +3490,7 @@ input, select, textarea {
 			justify-content: center;
 		}
 
-		.padding-top-1{
+		ul.actions li.padding-top-1{
 			padding-top: 1rem;
 		}
 
