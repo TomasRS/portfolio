@@ -3494,6 +3494,15 @@ input, select, textarea {
 			padding-top: 1rem;
 		}
 
+		ul.actions a.non-clickable{
+			background-color: darkred;
+		}
+
+		ul.actions a.non-clickable:hover{
+			background-color: darkred;
+			cursor: default;
+		}
+
 		@media screen and (max-width: 1280px) {
 
 			#banner {
