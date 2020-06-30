@@ -15,8 +15,11 @@
 			xsmall:	'(max-width: 480px)'
 		});
 
-	// Play initial animations on page load.
+	// Play initial animations on page load and display JPEG2000 images if browser does not support WebP.
 		$window.on('load', function() {
+			if(!browserSupportsWebP()){
+				replaceWebPForJpeg2000();
+			}
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
@@ -36,5 +39,23 @@
 			});
 
 		}
+
+	//Utils
+	function browserSupportsWebP() {
+		var elem = document.createElement('canvas');
+	
+		if (!!(elem.getContext && elem.getContext('2d'))) {
+			// was able or not to get WebP representation
+			return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+		}
+	
+		// very old browser like IE 8, canvas not supported
+		return false;
+	}
+
+	function replaceWebPForJpeg2000(){
+		var imgs = document.getElementsByTagName("img");
+		imgs.forEach(image => image.src = image.src.split('.')[0] + '.jpf');
+	}
 
 })(jQuery);
