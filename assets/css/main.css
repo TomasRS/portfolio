@@ -4125,7 +4125,7 @@ input, select, textarea {
 					width: 30% !important;
 				}
 
-				.about-me-image{
+				.image img.about-me-image{
 					border-radius: 50%;
 					width: 257px;
 				}

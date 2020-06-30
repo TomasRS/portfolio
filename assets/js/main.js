@@ -17,9 +17,6 @@
 
 	// Play initial animations on page load and display JPEG2000 images if browser does not support WebP.
 		$window.on('load', function() {
-			if(!browserSupportsWebP()){
-				replaceWebPForJpeg2000();
-			}
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
@@ -51,15 +48,6 @@
 	
 		// very old browser like IE 8, canvas not supported
 		return false;
-	}
-
-	function replaceWebPForJpeg2000(){
-		var imgs = document.getElementsByTagName("img");
-		imgs.forEach(replaceExtension(image));
-	}
-
-	function replaceExtension(image){
-		image.src = image.src.replace(/webp/g,'jp2');
 	}
 
 })(jQuery);
