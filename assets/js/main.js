@@ -55,7 +55,11 @@
 
 	function replaceWebPForJpeg2000(){
 		var imgs = document.getElementsByTagName("img");
-		imgs.forEach(image => image.src = image.src.split('.')[0] + '.jpf');
+		imgs.forEach(replaceExtension(image));
+	}
+
+	function replaceExtension(image){
+		image.src = image.src.replace(/webp/g,'jp2');
 	}
 
 })(jQuery);
