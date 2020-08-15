@@ -371,6 +371,10 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.display-none{
+		display: none;
+	}
+
 /* Row */
 
 	.row {
