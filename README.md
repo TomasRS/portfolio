@@ -5,6 +5,3 @@ Cloud web application (front end only) with custom domain stored in an Azure Sta
 - HTML 5
 - CSS 3
 - Javascript & jQuery
-
-### Lighthouse Audit Result
-![Lighthouse Audit Result](/readme-images/Audit.jpg?raw=true "Lighthouse Audit Result")
